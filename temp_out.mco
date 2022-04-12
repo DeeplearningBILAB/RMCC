@@ -1,0 +1,108 @@
+A1 	# Version number of the file format.
+
+####
+# Data categories include: 
+# Rd_ra,RdCon_xy,TtCon_xy,TtCon_yz,TtCon_xz,
+RdMat_xy,TtMat_xy,TtMat_yz,TtMat_xz,Tt_ra 
+####
+
+# User time:       26 sec =     0.01 hr.   Simulation time of this run.
+
+InParm 			# Input parameters. cm is used.
+temp_out.mco 	A		# output file name, ASCII.
+40000 			# No. of photons
+0.005	0.002		# dz, dr [cm]
+2	1	1	# No. of dz, dr, da.
+0.005	0.005		# dx, dy [cm]
+2	2		# No. of dx, dy.
+1			# Isotropic scatter of Raman.
+
+5	4	2.5	0.1		# lt, bt, ht, tn of box[cm]
+#n	mua	mus	g	ramProb	# One line for each layer
+1					# n for medium above
+1	0	250	0.9	1E-006	# layer 1
+1	0	500	0.9	1E-006	# layer 2
+1					# n for medium below
+
+
+Total Raman photons = 63
+# Rd[x][y]. [1/(cm2sr)].
+# Rd[0][0], [0][1],..[0][nx-1]
+# Rd[1][0], [1][1],..[1][nx-1]
+# ...
+# Rd[ny-1][0], [ny-1][1],..[nx-1][ny-1]
+Rd_xy
+
+2	2		#nx,ny
+RdCon
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+
+RdMat
+ 8.2500E-004
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+
+# Tt[x][y]. [1/(cm2sr)].
+# Tt[0][0], [0][1],..[0][nx-1]
+# Tt[1][0], [1][1],..[1][nx-1]
+# ...
+# Tt[ny-1][0], [ny-1][1],..[nx-1][ny-1]
+Tt_xy
+
+2	2		#nx,ny
+TtCon_xy
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+
+TtMat_xy
+ 3.0000E-004
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+
+# Tt[y][z]. [1/(cm2sr)].
+# Tt[0][0], [0][1],..[0][ny-1]
+# Tt[1][0], [1][1],..[1][ny-1]
+# ...
+# Tt[nz-1][0], [nz-1][1],..[ny-1][nz-1]
+Tt_yz
+
+2	2		#ny,nz
+TtCon_yz
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+TtMat_yz
+
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+
+# Tt[x][z]. [1/(cm2sr)].
+# Tt[0][0], [0][1],..[0][nz-1]
+# Tt[1][0], [1][1],..[1][nz-1]
+# ...
+# Tt[nz-1][0], [nz-1][1],..[nx-1][nz-1]
+Tt_xz
+
+2	2		#nx,nz
+TtCon_xz
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+ 0.0000E+000
+
+TtMat_xz
+ 0.0000E+000
+ 1.5000E-004
+ 0.0000E+000
+ 0.0000E+000
+

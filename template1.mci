@@ -1,0 +1,26 @@
+####
+# Template of input files for Raman Monte Carlo simulation for Cuboid (RMCC).
+# Anything in a line after "#" is ignored as comments.
+# Space lines are also ignored.
+# Lengths are in cm, mua and mus are in 1/cm.
+####
+
+1.0						# file version
+1						# number of runs
+
+### Specify data for run 1
+temp_out.mco	A				# output filename, ASCII/Binary
+40000 						# No. of photons
+0.005	20E-4					# dz, dr
+2	1	1						# No. of dz, dr & da.
+0.005	 0.005					# dx, dy
+2 2						# No. fo dx & dy
+1								# Flag for isotropic scattering. 1 for iso scattering.
+
+5	4	2.5	0.1					# Dim. of cuboid; x,y,z and width of the container.
+
+# n		mua		mus		g		RP		# One line for each layer
+1.0										# n for medium above.
+1.0		0		250		0.90	1E-6				# Container
+1.0		0		500		0.90	1E-6				# Material
+1.0										# n for medium below.

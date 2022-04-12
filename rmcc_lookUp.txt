@@ -1,0 +1,25 @@
+Raman Monte Carlo Simulation for Light Transport in Cuboid (RMCC)
+
+List of files
+
+Code files
+1. MCML.h
+2. MCMLMAIN.C
+3. MCMLIO.C
+4. MCMLGO.C
+5. MCMLNR.C
+
+Sample input files
+6. template1.mci
+
+Sample output files
+7.temp_out.mco
+
+Manuals
+8. RMCC_Manual.pdf	
+9. Mcman_DrWang.pdf
+
+Execution
+Run RMCC.exe by double clicking it. After making sure the input file (.mci) is in the folder containing the executable, give the input file name in the command prompt. Output file (.mco) is written in the directory where the executable is called from.
+
+This .exe file was generated on windows platform. One can also compile the source code and generate .exe file if it needs to be run on other operating system or some modifications are done on the code.
